@@ -1,8 +1,9 @@
 SporkPGM
 ========
 
-ParaPGM - RELOADED! 
+## V2 IS CURRENTLY BEING DEVELOPED IN THE 2.0.0 BRANCH! ##
 
+ParaPGM - RELOADED! 
 
 How to set this thing up
 ------------------------
