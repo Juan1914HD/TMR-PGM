@@ -111,6 +111,7 @@
 									<include>joda-time:joda-time</include>
 									<include>org.jdom:jdom2</include>
 									<include>org.json:json</include>
+									<include>dom4j:dom4j</include>
 								</includes>
 							</artifactSet>
 						</configuration>
