@@ -20,8 +20,8 @@ public class NickCommands {
         }
         Player playersender = (Player) sender;
         String nickname = cmd.getString(0);
-        if (nickname.length() > 15) {
-            sender.sendMessage(ChatColor.RED + "Nickname too long!");
+        if (nickname.length() > 1) {
+            sender.sendMessage(ChatColor.RED + "Nickname deshabilitado!");
             return;
         }
 
