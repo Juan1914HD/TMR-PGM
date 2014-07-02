@@ -176,7 +176,7 @@ public class Spork extends JavaPlugin {
 		developer.add();
 		Rank contributor = new Rank(ChatColor.DARK_AQUA, Chars.FLAIR, "Contributor", 1000, true);
 		contributor.add();
-		Rank referee = new Rank(ChatColor.DARK_PURPLE, Chars.ASTERISK, "Referee", 1000, true);
+		Rank referee = new Rank(ChatColor.BLACK, Chars.ASTERISK, "Referee", 1000, true);
 		referee.add();
 
 		players = new HashMap<>();
