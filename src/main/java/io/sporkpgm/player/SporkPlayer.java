@@ -345,7 +345,7 @@ public class SporkPlayer implements Listener {
 		if(getTeam().isObservers() || !RotationSlot.getRotation().getCurrentMatch().isRunning()) {
 			ItemStack compass = new ItemStack(Material.COMPASS);
 			ItemMeta meta = compass.getItemMeta();
-			meta.setDisplayName(ChatColor.AQUA + "Teleportation Device");
+			meta.setDisplayName(ChatColor.RED + "Magic Compass");
 			compass.setItemMeta(meta);
 			getPlayer().getInventory().setItem(0, compass);
 			for(String permission : perms)
