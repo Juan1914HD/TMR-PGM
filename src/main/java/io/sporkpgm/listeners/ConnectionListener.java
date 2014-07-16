@@ -77,7 +77,7 @@ public class ConnectionListener implements Listener {
 		} else if(phase == MatchPhase.CYCLING) {
 			status = ChatColor.RED;
 		}
-		event.setMotd(status + "" + Chars.RAQUO + "" + ChatColor.AQUA + " " + RotationSlot.getRotation().getCurrent().getName() + " " + status + Chars.LAQUO);
+		event.setMotd(ChatColor.DARK_RED + Logistic + ChatColor.ORANGE + Gamers + status + "" + Chars.RAQUO + "" + ChatColor.GREEN + " " + RotationSlot.getRotation().getCurrent().getName() + " " + status + Chars.LAQUO);
 	}
 
 }
