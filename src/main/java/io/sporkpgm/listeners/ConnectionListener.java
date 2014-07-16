@@ -69,15 +69,15 @@ public class ConnectionListener implements Listener {
 		MatchPhase phase = RotationSlot.getRotation().getCurrentMatch().getPhase();
 		ChatColor status = null;
 		if(phase == MatchPhase.WAITING) {
-			status = ChatColor.GRAY + " Waiting";
+			status = ChatColor.GRAY;
 		} else if(phase == MatchPhase.STARTING) {
-			status = ChatColor.GREEN + " Starting";
+			status = ChatColor.GREEN;
 		} else if(phase == MatchPhase.PLAYING) {
-			status = ChatColor.GOLD + " Playing";
+			status = ChatColor.GOLD;
 		} else if(phase == MatchPhase.CYCLING) {
-			status = ChatColor.AQUA + " Cycling";
+			status = ChatColor.RED;
 		}
-		event.setMotd(ChatColor.DARK_AQUA + "" + LogisticGamers's server + " " + ChatColor.GOLD + "" + | + " " + status + " " + " " + " " + ChatColor.RED + "" + Map: + " " ChatColor.GOLD + " " + RotationSlot.getRotation().getCurrent().getName());
+		event.setMotd(status + "" + Chars.RAQUO + "" + ChatColor.AQUA + " " + RotationSlot.getRotation().getCurrent().getName() + " " + status + Chars.LAQUO);
 	}
 
 }
