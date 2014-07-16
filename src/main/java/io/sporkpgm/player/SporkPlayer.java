@@ -341,7 +341,7 @@ public class SporkPlayer implements Listener {
 		empty();
 		boolean update = false;
 		GameMode mode = GameMode.CREATIVE;
-		String[] perms = {"worldedit.navigation.jump.*", "worldedit.navigation.thru.*", "commandbook.teleport"};
+		String[] perms = {"worldedit.navigation.jumpto.*", "worldedit.navigation.thru.*", "commandbook.teleport"};
 		if(getTeam().isObservers() || !RotationSlot.getRotation().getCurrentMatch().isRunning()) {
 			ItemStack compass = new ItemStack(Material.COMPASS);
 			ItemMeta meta = compass.getItemMeta();
