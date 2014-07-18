@@ -29,7 +29,7 @@ public class ServerStarting extends ServerPhase {
 
 		if(duration <= 0) {
 			broadcast(ChatColor.DARK_PURPLE + "# # # # # # # # # # # # # # # # ");
-			broadcast(ChatColor.DARK_PURPLE + "# # " + ChatColor.GREEN + "The match has started!" + ChatColor.DARK_PURPLE + " # #");
+			broadcast(ChatColor.DARK_PURPLE + "# # " + ChatColor.GOLD + "The match has started!" + ChatColor.DARK_PURPLE + " # #");
 			broadcast(ChatColor.DARK_PURPLE + "# # # # # # # # # # # # # # # #");
 			match.setPhase(MatchPhase.PLAYING);
 
@@ -71,7 +71,7 @@ public class ServerStarting extends ServerPhase {
 
 	@Override
 	public String getMessage() {
-		return ChatColor.GREEN + "Match starting in " + ChatColor.RED + getSeconds() + ChatColor.GREEN + " second" + (getSeconds() != 0 ? "s" : "") + "!";
+		return ChatColor.GREEN + "Match starting in " + ChatColor.DARK_RED + getSeconds() + ChatColor.GREEN + " second" + (getSeconds() != 0 ? "s" : "");
 	}
 
 }
