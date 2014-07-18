@@ -142,7 +142,7 @@ public class ServerCycling extends ServerPhase {
 		}
 
 		if(show)
-			broadcast(what + " in " + ChatColor.RED + getSeconds() + " second" + (getSeconds() != 1 ? "s" : "") + colour + "!");
+			broadcast(what + " in " + ChatColor.DARK_RED + getSeconds() + ChatColor.DARK_AQUA + " second" + (getSeconds() != 1 ? "s" : ""));
 		setTicks(getTicks() - 1);
 	}
 
@@ -151,8 +151,8 @@ public class ServerCycling extends ServerPhase {
 		ChatColor colour = ChatColor.GRAY;
 		String what = colour + "Server restarting";
 		if(next != null) {
-			colour = ChatColor.AQUA;
-			what = colour + "Cycling to " + ChatColor.DARK_AQUA + next.getMap().getName() + colour;
+			colour = ChatColor.DARK_AQUA;
+			what = colour + "Cycling to " + ChatColor.AQUA + next.getMap().getName() + colour;
 		}
 		return what;
 	}
