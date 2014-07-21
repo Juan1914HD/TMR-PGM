@@ -345,7 +345,7 @@ public class SporkPlayer implements Listener {
 		if(getTeam().isObservers() || !RotationSlot.getRotation().getCurrentMatch().isRunning()) {
 			ItemStack compass = new ItemStack(Material.COMPASS);
 			ItemMeta meta = compass.getItemMeta();
-			meta.setDisplayName(ChatColor.RED + "Magic Compass");
+			meta.setDisplayName(ChatColor.GOLD + "Victory Compass!");
 			compass.setItemMeta(meta);
 			getPlayer().getInventory().setItem(0, compass);
 			for(String permission : perms)
@@ -562,7 +562,7 @@ public class SporkPlayer implements Listener {
 
 		boolean team = event.isTeam() && getTeam() != null;
 		String pre = (team ? getTeamColour() + "[Team] " : "");
-		String full = pre + getTeamColour() + getPrefix() + getTeamColour() + getNickname() + ChatColor.WHITE + ": " + event.getMessage();
+		String full = pre + ChatColor.WHITE + "<" + getTeamColour() + getPrefix() + getTeamColour() + getNickname() + ChatColor.WHITE + ">" + ": " + event.getMessage();
 		if(team) {
 			for(SporkPlayer player : getTeam().getPlayers()) {
 				player.getPlayer().sendMessage(full);
