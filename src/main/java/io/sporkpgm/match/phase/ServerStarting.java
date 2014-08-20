@@ -5,6 +5,8 @@ import io.sporkpgm.match.MatchPhase;
 import io.sporkpgm.player.SporkPlayer;
 import io.sporkpgm.team.SporkTeam;
 import org.bukkit.ChatColor;
+import me.confuser.barapi.BarAPI;
+import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 
 import java.util.List;
@@ -73,5 +75,10 @@ public class ServerStarting extends ServerPhase {
 	public String getMessage() {
 		return ChatColor.GREEN + "Match starting in " + ChatColor.DARK_RED + getSeconds() + ChatColor.GREEN + " second" + (getSeconds() != 0 ? "s" : "");
 	}
+	for (Player Online : Bukkit.getOnlinePlayers()) {
+			if(starting > 0) {
+			BarAPI.setMessage(Online, ChatColor.GREEN + "Match starting in " + ChatColor.DARK_RED + getSeconds() + ChatColor.GREEN + " second" + (getSeconds() != 0 ? "s" : "", (float) getSeconds() * 100);
+			}
+		}
 
 }
