@@ -36,6 +36,8 @@ public class MiscCommands {
             if (player.hasPermission("spork.misc.adminchat")) {
                 ChatColor white = ChatColor.WHITE;
                 player.getPlayer().sendMessage(white + "[" + ChatColor.GOLD + "A" + white + "] " + SporkPlayer.getPlayer((Player)sender).getFullName() + ChatColor.GRAY + ": " + white + cmd.getJoinedStrings(0));
+                //Adding sound for players with "spork.misc.adminchat" permissions get notified.
+                player.getPlayer().playSound(player.getPlayer().getLocation(), Sound.DIG_SNOW, 10, 1);
             }
         }
 
@@ -50,7 +52,7 @@ public class MiscCommands {
             }
         }
         String staff = StringUtil.staffList(list, ChatColor.WHITE);
-        String others = ChatColor.WHITE + "[" + ChatColor.GOLD + "SporkPGM" + ChatColor.WHITE + "] " + ChatColor.GRAY + "Staff Online (" + list.size() + "): ";
+        String others = ChatColor.WHITE + "[" + ChatColor.GOLD + "TMR-PGM" + ChatColor.WHITE + "] " + ChatColor.GRAY + "Staff Online (" + list.size() + "): ";
         sender.sendMessage(others + staff);
 
     }
