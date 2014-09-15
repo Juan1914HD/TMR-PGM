@@ -137,7 +137,7 @@ public class VictoryObjective extends ObjectiveModule {
 
 	@Override
 	public ChatColor getStatusColour() {
-		return (isComplete() ? dye, Chars.BLACK_STAR : dye, Chars.WHITE_STAR);
+		return (isComplete() ? dye, Chars.RED_STAR : dye, Chars.GREEN_STAR);
 	}
 
 	@Override
