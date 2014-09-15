@@ -183,10 +183,7 @@ public class Spork extends JavaPlugin {
 		players.put("ParaPenguin", new Rank[]{developer});
 		players.put("msalihov", new Rank[]{developer});
 		players.put("ShinyDialga45", new Rank[]{developer});
-		players.put("GuiMan_61", new Rank[]{developer});
-		players.put("Zeos_ML", new Rank[]{contributor});
-		players.put("InspireD_", new Rank[]{contributor});
-
+		players.put("supersonic160", new Rank[]{administrator});
 		List<String> referees = getConfig().getStringList("settings.referees");
 		if(referees != null) {
 			for(String ref : referees) {
