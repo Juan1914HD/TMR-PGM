@@ -17,7 +17,7 @@ return;
 Player playersender = (Player) sender;
 String nickname = cmd.getString(0);
 if (nickname.length() > 1) {
-sender.sendMessage(ChatColor.RED + "Nickname deshabilitado!");
+sender.sendMessage(ChatColor.RED + "Este comando esta desabilitado!");
 return;
 }
 if (cmd.argsLength() == 1) {
