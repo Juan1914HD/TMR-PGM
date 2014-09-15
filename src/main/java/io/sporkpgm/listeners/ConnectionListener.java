@@ -45,13 +45,13 @@ public class ConnectionListener implements Listener {
 
 		}, false).delay(1);
 
-		event.setJoinMessage(player.getFullName() + ChatColor.YELLOW + " joined the game");
+		event.setJoinMessage(player.getFullName() + ChatColor.YELLOW + " ha entrado");
 	}
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerQuit(PlayerQuitEvent event) {
 		SporkPlayer player = SporkPlayer.getPlayer(event.getPlayer());
-		event.setQuitMessage(player.getFullName() + ChatColor.YELLOW + " left the game");
+		event.setQuitMessage(player.getFullName() + ChatColor.YELLOW + " ha salido");
 
 		SporkPlayer.remove(event.getPlayer());
 	}
@@ -59,7 +59,7 @@ public class ConnectionListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerKick(PlayerKickEvent event) {
 		SporkPlayer player = SporkPlayer.getPlayer(event.getPlayer());
-		event.setLeaveMessage(player.getFullName() + ChatColor.YELLOW + " left the game");
+		event.setLeaveMessage(player.getFullName() + ChatColor.YELLOW + " ha salido");
 
 		SporkPlayer.remove(event.getPlayer());
 	}
@@ -77,7 +77,7 @@ public class ConnectionListener implements Listener {
 		} else if(phase == MatchPhase.CYCLING) {
 			status = ChatColor.RED;
 		}
-		event.setMotd(ChatColor.AQUA + "Logistic" + ChatColor.DARK_AQUA + "Gamers" + status + " " + Chars.RAQUO + "" + ChatColor.GREEN + " " + RotationSlot.getRotation().getCurrent().getName() + " " + status + Chars.LAQUO);
+		event.setMotd(ChatColor.AQUA + "TMR" + ChatColor.DARK_AQUA + "Server" + status + " " + Chars.RAQUO + "" + ChatColor.GREEN + " " + RotationSlot.getRotation().getCurrent().getName() + " " + status + Chars.LAQUO);
 	}
 
 }
