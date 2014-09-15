@@ -2,5 +2,5 @@ name: ${plugin.name}
 description: ${project.description}
 main: ${plugin.mainClass}
 version: ${project.version}
-authors: [TheMikelRex]
+authors: [TheMikelRex,Javipepe]
 prefix: Tmr-Pgm
