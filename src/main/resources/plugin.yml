@@ -2,5 +2,5 @@ name: ${plugin.name}
 description: ${project.description}
 main: ${plugin.mainClass}
 version: ${project.version}
-authors: [ParaPenguin,MasterEjay,kblanks,RainoBoy97,ShinyDialga45,TheMolkaPL,msalihov,kosgan10,lymibom,TheCso,TheMikelRex,santiagocortes34,knightopress,Themikelrex,Javipepe]
-prefix: Tmr-Pgm
+authors: [TheMikelRex]
+prefix: TMR-PGM
