@@ -234,7 +234,8 @@ public class Spork extends JavaPlugin {
 		cmr.register(MatchCommands.class);
 		cmr.register(RotationCommands.class);
 		cmr.register(TeamCommands.class);
-        cmr.register(NickCommands.class);
+                cmr.register(NickCommands.class);
+                cmr.register(AuthorCommands.class);
 	}
 
 	@Override
